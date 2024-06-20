@@ -8,6 +8,6 @@ public class HomeTests extends ApplicationManager {
 
     @Test
     public void test(){
-        HomePage homePge = new HomePage(getDriver());
+        HomePage homePage = new HomePage(getDriver());
     }
 }
