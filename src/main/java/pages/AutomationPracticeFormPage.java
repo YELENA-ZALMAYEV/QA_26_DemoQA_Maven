@@ -21,8 +21,12 @@ public class AutomationPracticeFormPage extends BasePage{
     WebElement fieldLastName;
     @FindBy(xpath = "//input[@placeholder='name@example.com']")
     WebElement fieldEmail;
+    @FindBy(id = "userNumber")
+    WebElement fieldMobileNumber;
+    @FindBy(id = "dateOfBirthInput")
+    WebElement fieldDateOfBirth;  // june
 
-    public AutomationPracticeFormPage typeStudentForm(StudentDTO student){
+    public AutomationPracticeFormPage typeStudentForm (StudentDTO student){
         fieldFirstName.sendKeys(student.getName());
         fieldLastName.sendKeys(student.getLastName());
         fieldEmail.sendKeys(student.getEmail());
