@@ -15,9 +15,11 @@ public class PracticeFormTests extends ApplicationManager {
 
     @Test
     public void practiceFormPositiveTest(){
+
         List<Hobbies> listHobbies = new ArrayList<>();
         listHobbies.add(Hobbies.SPORTS);
         listHobbies.add(Hobbies.MUSIC);
+
         StudentDTO student = new StudentDTO("Frodo", "Baggins", "frodobaggins@mail.com",
                 Gender.FEMALE, "1234567890", "12 Sep 1900", "Math, Physics, Economics",
                 listHobbies, "","Haifa st 1 app 2", "NCR", "Delhi");

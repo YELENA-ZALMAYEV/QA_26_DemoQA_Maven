@@ -11,7 +11,6 @@ import java.util.List;
 
 public class ApplicationManager {
     private WebDriver driver;
-
     private ChromeOptions chromeOptions = new ChromeOptions();
 
     public WebDriver getDriver() {
